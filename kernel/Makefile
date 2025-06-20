@@ -5,7 +5,7 @@ ifneq ($(KERNELRELEASE),)
 else
 # normal makefile
 default:
-	# Assume kernel source is at KDIR or fail
+	KDIR := /home/user/android_kernel_xiaomi_pipa
 	ifeq ($(KDIR),)
 		$(error KDIR is not set. Please define KDIR to point to the kernel source directory.)
 	endif
